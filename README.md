@@ -14,7 +14,9 @@ This repository includes examples such as:
 - user enumeration
 - etc.
 
-You can learn more about security autotests on our blog: https://www.cossacklabs.com/blog/ (link to be added later)
+You can learn more about security autotests here: 
+- https://www.cossacklabs.com/blog/ (link to be added later) - our blog
+- https://speakerdeck.com/iskand3rov/bulletproof-your-software-the-magic-of-security-autotests - the presentation 
 
 # Usage
 1. Choose a vulnerability template.
