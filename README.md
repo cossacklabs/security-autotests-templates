@@ -15,7 +15,7 @@ This repository includes examples such as:
 - etc.
 
 You can learn more about security autotests here: 
-- https://www.cossacklabs.com/blog/ (link to be added later) - our blog
+- https://www.cossacklabs.com/blog/security-autotests-for-measurable-and-stable-application-security-processes/ - our blog
 - https://speakerdeck.com/iskand3rov/bulletproof-your-software-the-magic-of-security-autotests - the presentation 
 
 # Usage
